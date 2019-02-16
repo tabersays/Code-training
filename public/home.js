@@ -76,8 +76,11 @@ let currentColor = "white";
 // This funtion is likely attached to a button on home.html
 function toggleColors() {
   if (currentColor === "white") {
+    // I change this variable to the color I am about to change things to.
     currentColor = "pink";
+    // I find the html element I want to change
     const element = document.getElementsByClassName("content")[0];
+    // I overwrite the class on that element in the css I have this class that sets a color
     element.className = "content pink";
   } else {
     currentColor = "white";
