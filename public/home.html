@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+    HTML is the structure and information of a web page, and is in a way the simplest.
+    HTML works with a tags that describe content, p for paragraphs, h for headers and so on.
+    A tag will generally describe what kind of cantent to come.
+    Tags have attribute, some are specific to only certain tags some are not.
+    class is an attribute which will be looked for by css to change the style of the element.
+    href is an attribute special to the a tag that tells the browser to go to a certain page.
+-->
+<html lang="en">
+  <!--
+        The head is mostly just metadata for the browser, it does things like fetches css pages, and setting the title.
+    -->
+  <head>
+    <meta charset="utf-8" />
+    <!--
+        This shows up as text on the tab of most browsers.
+    -->
+    <title>Training Codebase</title>
+    <!--
+        This is how HTML tells the browser it should go get a css file
+    -->
+    <link rel="stylesheet" href="home.css" />
+  </head>
+
+  <body class="container">
+    <div class="header">
+      <!--
+         h tags come in variations of 1-5 one being the biggest.
+         They are also usually bold.
+    -->
+      <h1 class="center">This a test site.</h1>
+    </div>
+    <!--
+        The nav tag is just a way to organize where you are putting the pages navigation.
+        It has no speacial styling around it.
+    -->
+    <nav class="nav">
+      <!--
+            ul stands for unorderd list. It is used for listing thisn usually comes with a bullet point.
+            There is also ol which numbers the things in the list.
+        -->
+      <ul>
+        <!--
+              li is a list item
+          -->
+        <li>
+          <!--
+                a stands for anchor, it is how you create links to other pages.
+                They need an href to tell it where it should link to.
+            -->
+          <a href="https://google.com">Google</a>
+        </li>
+      </ul>
+    </nav>
+
+    <content class="content white">
+      <!--
+            buttons come with some simple default styling and click functionality.
+            What it does on a click you have to define with javascript.
+            Here I set an onclick event. The browser will wait for the button to be clicked then it will call that function.
+            This function is pulled from a javascript file later in the code.
+        -->
+      <button class="color-button" onclick="toggleColors()">Make colors</button>
+      <p>Lots of awesome content</p>
+    </content>
+    <!--
+        This is how HTML tells the file to go get a javascript file.
+        We generally put it last so the browser will render the page for trying to read the file.
+        We do this so if the file is big people will see what is on the HTML before this file is ready.
+    -->
+    <script src="home.js"></script>
+  </body>
+</html>

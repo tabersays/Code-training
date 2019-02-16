@@ -1,0 +1,93 @@
+/*
+css is the way you change the way things look on a page and sometime even what it can do, we will focus mostly on style.
+When writing css you use the character "." to denote the css rule to target a class by that name so
+".container" tells the browser that this rule should target all things with the class container.
+If you just type the name of a tag like "a" it will apply the rule to all tags of the same name.
+*/
+/* This rule targets the class container */
+.container {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 150px 1fr;
+  grid-template-areas:
+    "header header"
+    "nav content";
+}
+
+.header {
+  grid-area: header;
+  background-color: #666;
+  padding: 10px 50px;
+}
+.center {
+  text-align: center;
+}
+
+.color-button {
+  background-color: hotpink;
+  border: none;
+  color: #fff;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 30px;
+  cursor: pointer;
+  box-shadow: 0 6px 8px 0 grey;
+}
+/*
+    The :active means to only apply this rule when the class is actinve. 
+    This makes the button looked pressed when you click on it.
+*/
+.color-button:active {
+  box-shadow: 0 2px 4px 0 grey;
+}
+
+.nav {
+  color: #fff;
+  text-align: center;
+  grid-area: nav;
+  background-color: #666;
+}
+
+/* This rule targets the tag ul */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /* width: 200px; */
+  background-color: #666;
+}
+/* This rule targets all a tags wraped in li tags*/
+li a {
+  display: block;
+  color: #fff;
+  padding: 15px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: hotpink;
+  color: white;
+}
+
+.content {
+  text-align: center;
+  grid-area: content;
+}
+
+.white {
+  background-color: whitesmoke;
+}
+.pink {
+  background-color: lightpink;
+}
+
+.blue {
+  background-color: lightblue;
+}

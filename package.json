@@ -1,0 +1,23 @@
+{
+  "name": "code-training",
+  "version": "1.0.0",
+  "description": "To help teach web developement basics",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tabersays/Code-training.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tabersays/Code-training/issues"
+  },
+  "homepage": "https://github.com/tabersays/Code-training#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
